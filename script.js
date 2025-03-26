@@ -3,7 +3,7 @@ const channelSelect = document.getElementById("channelSelect");
 const usernameInput = document.getElementById("username");
 const speaker = document.getElementById("speaker");
 
-const socket = io("https://0c52-103-154-36-78.ngrok-free.app"); // Connect to WebSocket Server
+const socket = io("https://localhost:3000"); // Connect to WebSocket Server
 let mediaRecorder;
 let audioChunks = [];
 let currentChannel = "channel1";
