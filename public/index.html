@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkie-Talkie Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Walkie-Talkie</h1>
+        <input type="text" id="username" placeholder="Enter your username">
+        <label for="channelSelect">Select Channel:</label>
+        <select id="channelSelect">
+            <option value="channel1">Channel 1</option>
+            <option value="channel2">Channel 2</option>
+            <option value="channel3">Channel 3</option>
+        </select>
+        <button id="talkButton" class="talk-button">🎤 Hold to Talk</button>
+        <p id="speaker">No one is talking</p>
+    </div>
+
+    <audio id="staticSound" src="https://www.myinstants.com/media/sounds/walkie-talkie-sound-effect.mp3" preload="auto"></audio>
+    <audio id="channelSwitch" src="https://www.myinstants.com/media/sounds/f1-radio_QLwLncI.mp3" preload="auto"></audio>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
