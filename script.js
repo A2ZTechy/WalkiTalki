@@ -3,7 +3,7 @@ const channelSelect = document.getElementById("channelSelect");
 const usernameInput = document.getElementById("username");
 const speaker = document.getElementById("speaker");
 
-const socket = io("https://localhost:3000"); // Connect to WebSocket Server
+const socket = io("https://walkitalki.onrender.com"); // Connect to WebSocket Server
 let mediaRecorder;
 let audioChunks = [];
 let currentChannel = "channel1";
